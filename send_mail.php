@@ -23,22 +23,25 @@ $mail = trim($mail);
 $tel = trim($tel);
 $message = trim($message);
 
+// mail adress and subject
+$to = "pastuh93@gmail.com";
+$subject = "Hello. It`s a new message from DeutchSkill site";
+
+// mail body
+$messageBody = "Name: $name\n";
+$messageBody .= "Email: $mail\n";
+$messageBody .= "Phone: $phone\n";
+$messageBody .= "Message:\n$message";
+
 
 
 // Send data to e-mail
-if (
-	mail(
-		"pastuh93@gmail.com",
-		// to
-		"Hello. It`s a new message from DeutchSkill site",
-		// subject
-		"Hello" //message
-	)
-) {
-	// code...
-	echo ("Done!");
+if (mail($to, $subject, $messageBody)) {
+	// sucssesful code
+	echo "Message sent successfully!";
 } else {
-	echo ("Fail.");
+	// error code
+	echo "An error occurred while sending the message.";
 }
 
 ?>

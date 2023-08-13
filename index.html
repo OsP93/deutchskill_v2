@@ -398,19 +398,25 @@
                 <div class="contact-form-header">
                     <h3 class="lng-contact-form-header">Оставить заявку или задать вопрос</h3>
                 </div>
-                <form action="send_mail.php">
+                <form action="send_mail.php" method="post">
                     <label for="name" class="lng-form-name">Имя:</label>
                     <input type="text" name="name" class="form-name">
+
                     <label for="mail" class="lng-form-mail">Почта:</label>
                     <input type="email" name="mail" class="form-mail">
+
                     <label for="phone" class="lng-form-phone">Телефон:</label>
                     <input type="text" name="phone" class="form-phone">
+
                     <label for="message" class="lng-form-message">Сообщение:</label>
                     <textarea type="text" name="message" class="form-message"></textarea>
+
                     <input id="polit-checkbox" checked type="checkbox" class="polit-checkbox" name="checkbox" value="1">
                     <label for="checkbox" class="lng-form-checkbox"><a href="#">Я согласен с условиями использования
                             и политикой конфиденциальности</a></label>
+
                     <br>
+
                     <button id="submit-btn" type="submit" class="lgn-submit-btn submit-btn">Отправить</button>
 
                 </form>
