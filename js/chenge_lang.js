@@ -3,7 +3,6 @@ window.onload = function () {
     const select = document.querySelector('select');
     const allLang = ['ru', 'ua', 'de']
 
-
     select.addEventListener('change', changeURLAdress);
     function changeURLAdress() {
         let lang = select.value;
@@ -32,5 +31,5 @@ window.onload = function () {
         }
     };
 
-    changeLanguage();
+    //changeLanguage();
 };

@@ -299,4 +299,41 @@ const langArr = {
         "de": "und finde dein Deutsch Niveau und entfalte dein sprachliches Potenzial",
         "ua": "та дізнайтесь свій <br> рівень німецької!",
     },
+    "contact-form-header": {
+        "ru": "Оставить заявку или задать вопрос",
+        "de": "Hinterlassen Sie eine Anfrage oder stellen Sie eine Frage",
+        "ua": "Запишіться на курс або задайте запитання яке вас цікавить",
+    },
+    "form-name": {
+        "ru": "Имя:*",
+        "de": "Name:*",
+        "ua": "Ім'я:*",
+    },
+    "form-mail": {
+        "ru": "Почта:*",
+        "de": "E-Mail:*",
+        "ua": "Пошта:*",
+    },
+    "form-phone": {
+        "ru": "Телефон:",
+        "de": "Telefon:",
+        "ua": "Телефон:",
+    },
+    "form-message": {
+        "ru": "Сообщение:",
+        "de": "Nachricht:",
+        "ua": "Повідомлення:",
+    },
+
+    "submit-btn": {
+        "ru": "Отправить",
+        "de": "Schicken",
+        "ua": "Відправити",
+    },
+
+    "form-checkbox": {
+        "ru": "Я согласен с условиями использования и политикой конфиденциальности",
+        "de": "Ich stimme den Nutzungsbedingungen und Datenschutzbestimmungen zu",
+        "ua": "Я погоджуюсь з умовами використання та політикою конфіденційності",
+    },
 };

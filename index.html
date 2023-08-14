@@ -16,8 +16,11 @@
     <link rel="preconnect" href="fonts/Object_Sans/ObjectSans/ObjectSans-Regular.otf">
     <link rel="preconnect" href="fonts/Object_Sans/ObjectSans/ObjectSans-Slanted.otf">
 
-    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style_min.css">
+
     <title>DeutschSkill</title>
+    <link rel="shortcut icon" type="image/svg" href="src/ico/favicon.ico" />
 </head>
 
 <body>
@@ -111,7 +114,7 @@
                         <h2 class="header-description lng-head">Курс немецкого языка, который поможет <br> вам выразить
                             себя с
                             уверенностью</h2>
-                        <div class="header-button btnanimate">
+                        <div class="header-button btnanimate s-btn">
                             <div class="header-button--text lng-btn1">Записаться на курс</div>
                             <a href="#" class="header-button--link"><img class="header-button--img"
                                     src="src/ico/circle.svg" alt="header_btn"></a>
@@ -167,7 +170,7 @@
                                 халтуры. К концу курса и вовсе сможете выражать свои мысли на различные темы, такие как:
                                 чувства, погода, учеба и многие другие.</p>
                         </div>
-                        <div class="card-button btnanimate">
+                        <div class="card-button btnanimate s-btn">
                             <div class="card-button--text lng-btn2">Узнать подробнее</div>
                             <a href="#" class="card-button--link"><img class="card-button--img"
                                     src="src/ico/polygon_w.svg" alt="card_btn"></a>
@@ -202,7 +205,7 @@
                                 беседу. Говорить мы будем много : для этого у нас есть много различных заданий на
                                 построение диалогов или ответы на вопросы.</p>
                         </div>
-                        <div class="card-button2 btnanimate">
+                        <div class="card-button2 btnanimate s-btn">
                             <div class="card-button--text lng-btn3">Узнать подробнее</div>
                             <a href="#" class="card-button--link"><img class="card-button--img"
                                     src="src/ico/polygon_b.svg" alt="card_btn"></a>
@@ -238,7 +241,7 @@
                                 грамматику уровня В1 легко и без «зубрежки». Ну и конечно же, мы выучим много-много
                                 лексики.</p>
                         </div>
-                        <div class="card-button btnanimate">
+                        <div class="card-button btnanimate s-btn">
                             <div class="card-button--text lng-btn5">Узнать подробнее</div>
                             <a href="#" class="card-button--link"><img class="card-button--img"
                                     src="src/ico/polygon_w.svg" alt="card_btn"></a>
@@ -273,7 +276,7 @@
                             <div class="token-text lng-club-group">до 10 человек</div>
                         </div>
                     </div>
-                    <div class="club-content--btn btnanimate">
+                    <div class="club-content--btn btnanimate s-btn">
                         <div class="button--text lng-club-btn">Записаться в клуб</div>
                         <a href="#" class="button--link"><img class="button--img" src="src/ico/circle.svg"
                                 alt="club-content--btn"></a>
@@ -377,7 +380,7 @@
                     <h3 class="invite-content--title lng-invite-title">ЗАПИШИТЕСЬ
                         НА БЕСПЛАТНЫЙ ПРОБНЫЙ УРОК</h3>
                     <p class="invite-content--text lng-invite-text">и узнайте свой <br> уровень немецкого!</p>
-                    <div class="invite-content--btn btnanimate">
+                    <div class="invite-content--btn btnanimate s-btn">
                         <div class="button--text lng-club-btn2">Записаться в клуб</div>
                         <a href="#" class="button--link"><img class="button--img" src="src/ico/circle2.svg"
                                 alt="club-content--btn"></a>
@@ -392,17 +395,21 @@
                 </footer>
         </section>-->
     </div>
-    <div class="wrapper-form">
+    <div class="wrapper-form hidden-d">
         <section id="form">
             <div class="contact-form">
+                <div class="close-form">
+                    <img src="src/ico/burger-menu_cross.svg" alt="cross" class="cross">
+                </div>
+
                 <div class="contact-form-header">
                     <h3 class="lng-contact-form-header">Оставить заявку или задать вопрос</h3>
                 </div>
-                <form action="send_mail.php" method="post">
-                    <label for="name" class="lng-form-name">Имя:</label>
+                <form action="send_mail.php" method="post" id="myForm">
+                    <label for="name" class="lng-form-name">Имя:*</label>
                     <input type="text" name="name" class="form-name">
 
-                    <label for="mail" class="lng-form-mail">Почта:</label>
+                    <label for="mail" class="lng-form-mail">Почта:*</label>
                     <input type="email" name="mail" class="form-mail">
 
                     <label for="phone" class="lng-form-phone">Телефон:</label>
@@ -414,11 +421,11 @@
                     <input id="polit-checkbox" checked type="checkbox" class="polit-checkbox" name="checkbox" value="1">
                     <label for="checkbox" class="lng-form-checkbox"><a href="#">Я согласен с условиями использования
                             и политикой конфиденциальности</a></label>
-
                     <br>
-
-                    <button id="submit-btn" type="submit" class="lgn-submit-btn submit-btn">Отправить</button>
-
+                    <button id="submit-btn" type="submit" class="submit-btn">
+                        <p class="button--text lgn-submit-btn">Schicken</p>
+                        <img class="button--img" src="src/ico/circle2.svg" alt="club-content--btn">
+                    </button>
                 </form>
             </div>
         </section>
@@ -426,6 +433,7 @@
     <script src="js/header_animation.js"></script>
     <script src="js/mobile_menu.js"></script>
     <script src="js/chenge_lang.js"></script>
+    <script src="js/send_mail.js"></script>
 </body>
 
 </html>

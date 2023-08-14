@@ -1,4 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
+// add listener 'onclick' on all ellements with s-btn class (Пізніше переробити на делегування)
+
+const buttons = document.querySelectorAll(".s-btn");
+const closeBtn = document.querySelector(".close-form")
+
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+        console.log(document.querySelector(".wrapper"));
+        document.querySelector(".wrapper").classList.add('hidden-d');
+        document.querySelector(".wrapper-form").classList.remove('hidden-d');
+    };
+}
+
+closeBtn.addEventListener('click', function () {
+    document.querySelector(".wrapper-form").classList.add('hidden-d');
+    document.querySelector(".wrapper").classList.remove('hidden-d');
+})
+
+
+document.getElementById('submit-btn').addEventListener('click', function () {
+    console.log('hello!')
     var form = document.getElementById("myForm");
 
     form.addEventListener("submit", function (event) {
@@ -34,4 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             textarea.value = ""; // Очищаємо значення текстового поля
         }
     };
+
+    document.querySelector(".wrapper-form").classList.add('hidden-d');
+    document.querySelector(".wrapper").classList.remove('hidden-d');
 });
