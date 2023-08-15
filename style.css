@@ -256,16 +256,20 @@ html {
 }
 
 .close-form {
-    display: inline-flex;
-    justify-content: center;
+    float: right;
+    /* justify-content: center; */
+    border: solid 2px #FCD338;
     align-items: center;
     background: #000;
     padding: 10px;
+    margin-top: -2%;
+    margin-right: -11%;
     border-radius: 50%;
     cursor: pointer;
-    position: absolute;
+    /* position: absolute;
     left: 73%;
-    top: 4%;
+    top: 4%; */
+
 }
 
 .cross {
@@ -282,7 +286,7 @@ html {
     width: 100%;
     height: auto;
     margin: 5% 1% 2%;
-    padding: 2% 1%;
+    padding: 4.5vh 1% 2%;
     position: absolute;
     left: -1%;
     top: 4%;
@@ -915,7 +919,7 @@ html {
 .contact-form {
     width: 40%;
     margin: 5% auto;
-    padding: 4%;
+    padding: 1% 4% 2%;
     color: #FFF;
     background: #000;
     /*background-image: url(src/img/Group_b.svg);
@@ -1130,10 +1134,10 @@ form a:hover {
     }
 
     .navigation-navbar--pill:hover {
-        background-color: #FFE377;
+        /*background-color: #FFE377;*/
         scale: 1.02;
         box-shadow: 0 2px 5px #464545db;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .navigation-lang {
@@ -1222,10 +1226,7 @@ form a:hover {
         width: 60%;
     }
 
-    .close-form {
-        left: 80%;
-        top: 4%;
-    }
+
 }
 
 @media screen and (max-width: 765px) {
@@ -1366,8 +1367,7 @@ form a:hover {
     }
 
     .close-form {
-        left: 83%;
-        top: 0%;
+        padding: 3px;
     }
 
 }

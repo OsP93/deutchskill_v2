@@ -19,6 +19,26 @@ const langArr = {
         "de": "Kontakte",
         "ua": "Контакти",
     },
+    "mobilemenu-about": {
+        "ru": "О нас",
+        "de": "Über uns",
+        "ua": "Про нас",
+    },
+    "mobilemenu-teachers": {
+        "ru": "Преподаватели",
+        "de": "Unsere Lehrerinnen",
+        "ua": "Викладачі",
+    },
+    "mobilemenu-courses": {
+        "ru": "Курсы",
+        "de": "Kurse",
+        "ua": "Курси",
+    },
+    "mobilemenu-contact": {
+        "ru": "Контакты",
+        "de": "Kontakte",
+        "ua": "Контакти",
+    },
     "head": {
         "ru": "Курс немецкого языка, который поможет <br> вам выразить себя с уверенностью",
         "de": "Die Sprachkurse die Menschen verbinden -<br> einfach und bequem weltweit die deutsche Sprache lernen",
