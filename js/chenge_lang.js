@@ -7,9 +7,9 @@ window.onload = function () {
     function changeURLAdress() {
         let lang = select.value;
         location.href = window.location.pathname + '#' + lang;
-        //location.reload();
         console.log(lang);
         changeLanguage();
+        location.reload();
     };
 
     // change language
@@ -18,7 +18,7 @@ window.onload = function () {
         hash = hash.substring(1);
         if (!allLang.includes(hash)) {
             location.href = window.location.pathname + '#ru';
-            //location.reload();
+            location.reload();
         }
 
         select.value = hash;
@@ -31,5 +31,5 @@ window.onload = function () {
         }
     };
 
-    //changeLanguage();
+    changeLanguage();
 };
