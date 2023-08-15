@@ -5,7 +5,7 @@ console.log('Hello! Mobile menu scripts are connected.');
 const burgerNavbar = document.querySelector('.navigation-navbar-mobile');
 const burgerMenuButtton = document.querySelector('.burgerpill');
 const burgerCrossButtton = document.querySelector('.burgerpill-cross');
-const langButton = document.querySelector('.navigation-lang');
+const langButton = document.querySelector('.mobilelang');
 const navPills = document.querySelectorAll('.navigation-navbar--pill'); // Collection of elements navigation pills
 
 // --- Event handler for burger menu buttons ---
