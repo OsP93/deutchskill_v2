@@ -15,6 +15,7 @@ window.onload = function () {
         changeLanguage();
         //location.reload();
     };
+    changeURLAdress();//test
 
     function changeURLAdressPhone() {
         let langPhone = mobileSelect.value;
@@ -23,6 +24,7 @@ window.onload = function () {
         changeLanguagePhone();
         //location.reload();
     };
+    changeURLAdressPhone();//test
 
 
     // change language
