@@ -2,6 +2,7 @@ window.onload = function () {
     // add to url selected lang.
     const select = document.querySelectorAll('select')[0];
     const mobileSelect = document.querySelectorAll('select')[1];
+    location.href = window.location.pathname + '#ru'//test
     const allLang = ['ru', 'ua', 'de']
 
 
