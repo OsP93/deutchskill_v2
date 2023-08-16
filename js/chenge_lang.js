@@ -60,8 +60,10 @@ window.onload = function () {
                 elem.innerHTML = langArr[key][hash];
             }
         }
-    location.reload();//test
+   
     };
 
     changeLanguage();
+    changeURLAdressPhone();
+    location.reload();//test
 };
