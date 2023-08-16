@@ -136,4 +136,3 @@ window.onload = function () {
 
     changeLanguage();
     changeURLAdressPhone();
-    location.reload();//test
